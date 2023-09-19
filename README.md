@@ -2,6 +2,20 @@
 
 <img src="/images/coverimage.png" width="700">
 
+## What is #Codetober?
+
+Here in ProstDev we dedicate ourselves to share knowledge to everyone that needs it. Because of that, every October we create this series of 31 videos ranging from various tech topics. 
+
+That's right...we'll publish ONE VIDEO A DAY!
+
+This year, the videos will be edited for your better digestion and will be less than 10 minutes each (hopefully).
+
+All of the scheduled videos will be listed below. If you can't access some of them yet is because they haven't been released as of now. Each video will be published at `12:00 AM ET`.
+
+Please comment on our videos to suggest future content or to ask any questions you may have about a specific topic (discussed in the video).
+
+Happy #Codetober!
+
 ## 💻 Technical specs
 
 These videos use:
