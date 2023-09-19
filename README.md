@@ -4,7 +4,7 @@
 
 ## What is #Codetober?
 
-Here in ProstDev we dedicate ourselves to share knowledge to everyone that needs it. Because of that, every October we create this series of 31 videos ranging from various tech topics. 
+Here in [ProstDev](https://www.prostdev.com/) we dedicate ourselves to share knowledge to everyone that needs it. Because of that, every October we create this series of 31 videos ranging from various tech topics. [See full playlist for previous years](https://www.youtube.com/playlist?list=PLb61lESgk6hhKwJpM565UJVS5CxVZ4D1u).
 
 That's right...we'll publish ONE VIDEO A DAY!
 
