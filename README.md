@@ -2,7 +2,15 @@
 
 <img src="/images/coverimage.png" width="700">
 
-## Videos
+## 💻 Technical specs
+
+These videos use:
+
+- Mule runtime version 4.4 
+- Anypoint Studio version 7.15 
+- MacOS Ventura 13.5 with Intel Core i9 processor
+
+## ▶️ Videos
 
 | Day | Video | Code
 |-|-|-
