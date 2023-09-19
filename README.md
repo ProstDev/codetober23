@@ -1,7 +1,7 @@
 # #Codetober 2023
 
 <p align="center">
-    <img src="/images/coverimage.png" width="700">
+    <img src="/images/coverimage.png" width="800">
 </p>
 
 ## What is #Codetober?
