@@ -1,8 +1,6 @@
-# Codetober 2023
+# #Codetober 2023
 
 <img src="/images/coverimage.png" width="700">
-
-Find the needed code to follow along the Codetober 2023 videos with Alex!
 
 ## Videos
 
