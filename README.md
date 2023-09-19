@@ -22,12 +22,15 @@ Happy #Codetober!
 
 These videos use:
 
-- Mule runtime version 4.4 
+- Anypoint Extension Pack version 1.0.3 (Pre-Release/BETA)
 - Anypoint Studio version 7.15 
 - MacOS Ventura 13.5 with Intel Core i9 processor
+- Mule runtime version 4.4 
+- Visual Studio Code version 1.82.2
 
 ## ▶️ Videos
 
 | Day | Video | Code
 |-|-|-
 | 1 | [How to scaffold Mule flows from a published API spec in Anypoint Studio](https://youtu.be/PHfN7Ah9mpc) | - [API Specification](/day1/api-spec/)</br>- [Mule project](/day1/mule-app/)
+| 2 | [How to scaffold Mule flows from a published API spec in Anypoint Code Builder](https://youtu.be/59PQL1FfM_g) | - [API Specification](/day2/api-spec/)</br>- [Mule project](/day2/mule-app/)
