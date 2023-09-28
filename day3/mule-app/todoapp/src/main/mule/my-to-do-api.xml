@@ -3,7 +3,7 @@
     <http:listener-config name="my-to-do-api-httpListenerConfig">
         <http:listener-connection host="0.0.0.0" port="8081" />
     </http:listener-config>
-    <apikit:config name="my-to-do-api-config" api="resource::481598f9-e37e-4656-8337-690ec8763251:my-to-do-api:1.0.0:raml:zip:my-to-do-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <apikit:config name="my-to-do-api-config" api="resource::481598f9-e37e-4656-8337-690ec8763251:my-to-do-api:2.0.0:raml:zip:my-to-do-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
     <flow name="my-to-do-api-main">
         <http:listener config-ref="my-to-do-api-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">
@@ -123,26 +123,6 @@ output application/json
             </on-error-propagate>
         </error-handler>
     </flow>
-    <flow name="put:\todos\(id):application\json:my-to-do-api-config">
-        <ee:transform doc:name="Transform Message">
-            <ee:variables>
-                <ee:set-variable variableName="id">attributes.uriParams.'id'</ee:set-variable>
-            </ee:variables>
-        </ee:transform>
-        <ee:transform doc:name="Transform Message">
-            <ee:message>
-                <ee:set-payload><![CDATA[%dw 2.0
-output application/json
----
-{
-  id: 2,
-  title: "Finish the MuleSoft mini-hack at Dreamforce",
-  checked: false,
-  dueDate: "2023-09-14"
-}]]></ee:set-payload>
-            </ee:message>
-        </ee:transform>
-    </flow>
     <flow name="delete:\todos\(id):my-to-do-api-config">
         <ee:transform doc:name="Transform Message">
             <ee:variables>
@@ -175,6 +155,26 @@ output application/json
         </ee:transform>
     </flow>
     <flow name="post:\todos:application\json:my-to-do-api-config">
+        <ee:transform doc:name="Transform Message">
+            <ee:message>
+                <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+  id: 2,
+  title: "Finish the MuleSoft mini-hack at Dreamforce",
+  checked: false,
+  dueDate: "2023-09-14"
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+    </flow>
+    <flow name="post:\todos\(id):application\json:my-to-do-api-config">
+        <ee:transform doc:name="Transform Message">
+            <ee:variables>
+                <ee:set-variable variableName="id">attributes.uriParams.'id'</ee:set-variable>
+            </ee:variables>
+        </ee:transform>
         <ee:transform doc:name="Transform Message">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0

@@ -19,7 +19,6 @@ types:
 title: My To-Do API
 mediaType:
   - application/json
-version: 1.0.0
 /todos:
   get:
     displayName: Get all To-Dos
@@ -71,14 +70,6 @@ version: 1.0.0
       "200":
         body:
           type: To-Do
-  put:
-    displayName: Update a To-Do
-    body:
-      type: To-Do
-    responses:
-      "200":
-        body:
-          type: To-Do
   delete:
     displayName: Delete a To-Do
     responses:
@@ -88,3 +79,11 @@ version: 1.0.0
       example: 1
       type: number
       format: int
+  post:
+    body:
+      type: To-Do
+    responses:
+      "200":
+        body:
+          type: To-Do
+version: 2.0.0
