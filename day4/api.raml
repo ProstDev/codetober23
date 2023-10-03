@@ -1,0 +1,70 @@
+#%RAML 1.0
+types:
+  To-Do:
+    properties:
+      id:
+        example: 1
+        type: number
+        format: int
+      title:
+        example: Example
+        type: string
+      checked:
+        default: false
+        example: false
+        type: boolean
+      dueDate:
+        example: 2023-10-03
+        type: date-only
+title: My To-Do API
+mediaType:
+  - application/json
+version: 1.0.0
+/todos:
+  get:
+    queryParameters:
+      titleContains?:
+        example: Example
+        type: string
+      isChecked?:
+        example: true
+        type: boolean
+      fromDate?:
+        example: 2023-10-03
+        type: date-only
+      toDate?:
+        example: 2023-10-03
+        type: date-only
+    responses:
+      "200":
+        body:
+          items:
+            type: To-Do
+  post:
+    body:
+      type: To-Do
+    responses:
+      "201":
+        body:
+          type: To-Do
+/todos/{id}:
+  get:
+    responses:
+      "200":
+        body:
+          type: To-Do
+  put:
+    body:
+      type: To-Do
+    responses:
+      "200":
+        body:
+          type: To-Do
+  delete:
+    responses:
+      "204": {}
+  uriParameters:
+    id:
+      example: 1
+      type: number
+      format: int

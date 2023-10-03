@@ -35,3 +35,4 @@ These videos use:
 | 1 | [How to scaffold Mule flows from a published API spec in Anypoint Studio](https://youtu.be/PHfN7Ah9mpc) | - [API Specification](/day1/api-spec/)</br>- [Mule project](/day1/mule-app/)
 | 2 | [How to scaffold Mule flows from a published API spec in Anypoint Code Builder](https://youtu.be/59PQL1FfM_g) | - [API Specification](/day2/api-spec/)</br>- [Mule project](/day2/mule-app/)
 | 3 | [How to RE-scaffold Mule flows from an Exchange API spec in Anypoint Studio](https://youtu.be/Wl9D72kBjso) | - [API Specification](/day3/api-spec/)</br>- [Mule project](/day3/mule-app/)
+| 4 | [Use MuleSoft's visual API Designer to create a To-Do API specification](https://youtu.be/8TqtcafHNT8) | - [RAML code](/day4/api.raml)</br>- [OAS code](/day4/api.json)

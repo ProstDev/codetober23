@@ -1,0 +1,213 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "My To-Do API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/todos": {
+      "get": {
+        "parameters": [
+          {
+            "name": "titleContains",
+            "in": "query",
+            "schema": {
+              "example": "Example",
+              "type": "string"
+            }
+          },
+          {
+            "name": "isChecked",
+            "in": "query",
+            "schema": {
+              "example": true,
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "fromDate",
+            "in": "query",
+            "schema": {
+              "example": "2023-10-03",
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "toDate",
+            "in": "query",
+            "schema": {
+              "example": "2023-10-03",
+              "type": "string",
+              "format": "date"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {}
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/To-Do"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/To-Do"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/To-Do"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/todos/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "example": 1,
+              "type": "integer",
+              "format": "int"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {}
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/To-Do"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "example": 1,
+              "type": "integer",
+              "format": "int"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/To-Do"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/To-Do"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "example": 1,
+              "type": "integer",
+              "format": "int"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {}
+        },
+        "responses": {
+          "204": {
+            "description": "",
+            "content": {}
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "To-Do": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "checked",
+          "dueDate"
+        ],
+        "properties": {
+          "id": {
+            "example": 1,
+            "type": "integer",
+            "format": "int"
+          },
+          "title": {
+            "example": "Example",
+            "type": "string"
+          },
+          "checked": {
+            "default": false,
+            "example": false,
+            "type": "boolean"
+          },
+          "dueDate": {
+            "example": "2023-10-03",
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    }
+  }
+}
