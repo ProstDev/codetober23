@@ -24,6 +24,7 @@ These videos use:
 
 - Anypoint Extension Pack version 1.0.3 (Pre-Release/BETA)
 - Anypoint Studio version 7.15 
+- DataWeave version 2.5 (after day 5)
 - MacOS Ventura 13.5 with Intel Core i9 processor
 - Mule runtime version 4.4 
 - Visual Studio Code version 1.82.2
@@ -36,3 +37,4 @@ These videos use:
 | 2 | [How to scaffold Mule flows from a published API spec in Anypoint Code Builder](https://youtu.be/59PQL1FfM_g) | - [API Specification](/day2/api-spec/)</br>- [Mule project](/day2/mule-app/)
 | 3 | [How to RE-scaffold Mule flows from an Exchange API spec in Anypoint Studio](https://youtu.be/Wl9D72kBjso) | - [API Specification](/day3/api-spec/)</br>- [Mule project](/day3/mule-app/)
 | 4 | [Use MuleSoft's visual API Designer to create a To-Do API specification](https://youtu.be/8TqtcafHNT8) | - [RAML code](/day4/api.raml)</br>- [OAS code](/day4/api.json)
+| 5 | [DataWeave 2.5 module features: `toString`, `concatWith`, `version`](https://youtu.be/CY2WeiTAgvk) | - [`toString`](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day5%2FtoString)</br>- [`concatWith`](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day5%2FconcatWith)</br>- [`version`](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day5%2Fversion)
