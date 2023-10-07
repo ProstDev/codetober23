@@ -1,0 +1,40 @@
+{
+    // Place your snippets for mule-xml here. Each snippet is defined under a snippet name and has a prefix, body and
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+    // same ids are connected.
+    // Example:
+    // "Log a message": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"<logger level=\"${1:INFO}\" message='$2' doc:name=\"Logger\" doc:id=\"$RANDOM_HEX\" />$0",
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "Basic Transform Message": {
+      "prefix": "transform",
+      "body": [
+        "<ee:transform>",
+        "<ee:message>",
+        "<ee:set-payload><![CDATA[%dw 2.0",
+        "output application/json",
+        "---",
+        "1]]></ee:set-payload>",
+        "</ee:message>",
+        "</ee:transform>"
+      ],
+      "description": "Basic structure to have a Transform Message component"
+    },
+    "External dwl file in Transform Message": {
+      "prefix": "transform",
+      "body": [
+        "<ee:transform doc:name=\"My transform!\">",
+        "<ee:message>",
+        "<ee:set-payload resource=\"dw/file.dwl\"/>",
+        "</ee:message>",
+        "</ee:transform>"
+      ],
+      "description": "Create your DataWeave code in an external file"
+    }
+  }
+  
