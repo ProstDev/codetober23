@@ -12,7 +12,7 @@ That's right...we'll publish ONE VIDEO A DAY!
 
 This year, the videos will be edited for your better digestion and will be less than 10 minutes each (hopefully).
 
-All of the scheduled videos will be listed below. If you can't access some of them yet is because they haven't been released as of now. Each video will be published at `12:00 AM ET`.
+All of the scheduled videos will be listed below. If you can't access some of them yet is because they haven't been released as of now. If there's a listed video that you can't access yet, it'll be published at `12:00 AM ET` on the corresponding day.
 
 Please comment on our videos to suggest future content or to ask any questions you may have about a specific topic (discussed in the video).
 
