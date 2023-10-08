@@ -1,0 +1,12 @@
+name: Testing out the GitHub Actions extension
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "This works yay!"
