@@ -10,3 +10,5 @@ jobs:
     steps:
       - run: |
           echo "This works yay!"
+      - run: echo "My username is ${{ secrets.USERNAME }}"
+      - run: echo "My password is ${{ secrets.PASSWORD }}"
