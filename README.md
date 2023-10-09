@@ -41,3 +41,4 @@ These videos use:
 | 6 | [Exploring the Thunder Client Extension for Visual Studio Code](https://youtu.be/oIN0tLa8zQ4) | 🔗 [Thunder Client for VS Code](https://www.thunderclient.com/)
 | 7 | [How to create custom user snippets in Anypoint Code Builder (VS Code)](https://youtu.be/pVJuvrf1_tM) | - [mule-xml.json](/day7/mule-xml.json)
 | 8 | [Exploring the GitHub Actions Extension for Visual Studio Code](https://youtu.be/COXOGBnmsSI) | - [test.yml](/day8/test.yml)
+| 9 | [How to deploy to CloudHub 2.0 with the Mule Maven Plugin & Connected App](https://youtu.be/r3V81EgFdGY) | - [Mule project](/day9/mymuleapp/)</br>- [mvn commands](/day9/commands.md)
