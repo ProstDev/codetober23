@@ -33,14 +33,14 @@ These videos use:
 
 | Day | Video | Code
 |-|-|-
-| 1 | [How to scaffold Mule flows from a published API spec in Anypoint Studio](https://youtu.be/PHfN7Ah9mpc) | - [API Specification](/day1/api-spec/)</br>- [Mule project](/day1/mule-app/)
-| 2 | [How to scaffold Mule flows from a published API spec in Anypoint Code Builder](https://youtu.be/59PQL1FfM_g) | - [API Specification](/day2/api-spec/)</br>- [Mule project](/day2/mule-app/)
-| 3 | [How to RE-scaffold Mule flows from an Exchange API spec in Anypoint Studio](https://youtu.be/Wl9D72kBjso) | - [API Specification](/day3/api-spec/)</br>- [Mule project](/day3/mule-app/)
+| 1 | [How to scaffold Mule flows from a published API spec in Anypoint Studio](https://youtu.be/PHfN7Ah9mpc) | - [API Specification/](/day1/api-spec/)</br>- [Mule project/](/day1/mule-app/)
+| 2 | [How to scaffold Mule flows from a published API spec in Anypoint Code Builder](https://youtu.be/59PQL1FfM_g) | - [API Specification/](/day2/api-spec/)</br>- [Mule project/](/day2/mule-app/)
+| 3 | [How to RE-scaffold Mule flows from an Exchange API spec in Anypoint Studio](https://youtu.be/Wl9D72kBjso) | - [API Specification/](/day3/api-spec/)</br>- [Mule project/](/day3/mule-app/)
 | 4 | [Use MuleSoft's visual API Designer to create a To-Do API specification](https://youtu.be/8TqtcafHNT8) | - [RAML code](/day4/api.raml)</br>- [OAS code](/day4/api.json)
 | 5 | [DataWeave 2.5 module features: `toString`, `concatWith`, `version`](https://youtu.be/CY2WeiTAgvk) | - [`toString`](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day5%2FtoString)</br>- [`concatWith`](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day5%2FconcatWith)</br>- [`version`](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day5%2Fversion)
 | 6 | [Exploring the Thunder Client Extension for Visual Studio Code](https://youtu.be/oIN0tLa8zQ4) | no code 🥹
 | 7 | [How to create custom user snippets in Anypoint Code Builder (VS Code)](https://youtu.be/pVJuvrf1_tM) | - [mule-xml.json](/day7/mule-xml.json)
 | 8 | [Exploring the GitHub Actions Extension for Visual Studio Code](https://youtu.be/COXOGBnmsSI) | - [test.yml](/day8/test.yml)
-| 9 | [How to deploy to CloudHub 2.0 with the Mule Maven Plugin & Connected App](https://youtu.be/r3V81EgFdGY) | - [Mule project](/day9/mymuleapp/)</br>- [mvn commands](/day9/commands.md)
+| 9 | [How to deploy to CloudHub 2.0 with the Mule Maven Plugin & Connected App](https://youtu.be/r3V81EgFdGY) | - [Mule project/](/day9/mymuleapp/)</br>- [mvn commands](/day9/commands.md)
 | 10 | [How to use DataWeave 2.5 with the BETA extension in Visual Studio Code](https://youtu.be/x_g-v6gJnbY) | - [day 5: `version`](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day5%2Fversion)
-| 11 | [8 examples to import modules/functions in DataWeave](https://youtu.be/Uzz2_yO-DJQ) | - [example-project](/day11/example-project/)
+| 11 | [8 examples to import modules/functions in DataWeave](https://youtu.be/Uzz2_yO-DJQ) | - [example-project/](/day11/example-project/)</br>- [example-project.zip](/day11/example-project.zip)
