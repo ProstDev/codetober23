@@ -43,4 +43,4 @@ These videos use:
 | 8 | [Exploring the GitHub Actions Extension for Visual Studio Code](https://youtu.be/COXOGBnmsSI) | - [test.yml](/day8/test.yml)
 | 9 | [How to deploy to CloudHub 2.0 with the Mule Maven Plugin & Connected App](https://youtu.be/r3V81EgFdGY) | - [Mule project](/day9/mymuleapp/)</br>- [mvn commands](/day9/commands.md)
 | 10 | [How to use DataWeave 2.5 with the BETA extension in Visual Studio Code](https://youtu.be/x_g-v6gJnbY) | - [day 5: `version`](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day5%2Fversion)
-| 11 | [8 examples to import modules/functions in DataWeave](https://youtu.be/Uzz2_yO-DJQ) | - [example-project](/day11/example-project/)</br>- [Playground](https://dataweave.mulesoft.com/learn/playground?projectMethod=GHRepo&repo=ProstDev%2Fcodetober23&path=day11%2Fdwplayground)
+| 11 | [8 examples to import modules/functions in DataWeave](https://youtu.be/Uzz2_yO-DJQ) | - [example-project](/day11/example-project/)
