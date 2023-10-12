@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="1ca7650f-5761-4294-81fd-b6152842f7ed" >
+		<http:listener-connection host="0.0.0.0" port="8083" />
+	</http:listener-config>
+	<flow name="scodetoberFlow" doc:id="39ebc8d6-ba05-43ef-84f0-d30accc0df76" >
+		<http:listener doc:name="Listener" doc:id="2393760e-402b-4165-92b0-c45314dfe94a" config-ref="HTTP_Listener_config" path="/test"/>
+		<set-payload value='#["Inside the System Layer"]' doc:name="Set Payload" doc:id="8c5b08e3-70d6-4351-93a1-02866943be1f" />
+		<logger level="INFO" doc:name="Logger" doc:id="5079d125-609f-4d80-bf19-a4a6623195c0" message="#[payload]"/>
+	</flow>
+</mule>
