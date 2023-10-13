@@ -10,4 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<configuration-properties doc:name="Configuration properties" doc:id="eeb04bc0-88db-4cfd-92e9-900c1201fd5f" file="${env}.properties" />
 	<global-property doc:name="Global Property" doc:id="255c40f3-9874-47a6-bcbe-e17472a123d2" name="env" value="local" />
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="9251503a-dcd1-4d20-a743-dc5be7bacdba" >
+		<http:request-connection host="${scodetober.http.host}" port="${scodetober.http.port}" />
+	</http:request-config>
 </mule>
