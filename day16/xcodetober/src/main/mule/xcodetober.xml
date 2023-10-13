@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="xcodetoberFlow" doc:id="cef5a905-3f1e-44ea-a4f4-71d4ed65a998" >
+		<http:listener doc:name="Listener" doc:id="8d564278-2b72-4c45-9cbf-822cab9014c1" config-ref="HTTP_Listener_config" path="${http.path}"/>
+		<set-payload value='#["Inside the Experience Layer"]' doc:name="Set Payload" doc:id="c51ccd5e-7d1f-40f9-a6c2-ae4e24cee5f2" />
+		<logger level="INFO" doc:name="Logger" doc:id="86e8c056-ebaa-433f-9ae2-abcf3f75504e" message="#[payload]"/>
+		<http:request method="GET" doc:name="pcodetober" doc:id="096a605e-c494-4143-9131-270adfe86d40" config-ref="HTTP_Request_configuration" path="${http.path}"/>
+	</flow>
+</mule>
