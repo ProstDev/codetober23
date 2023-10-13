@@ -4,9 +4,6 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="fce5847a-f094-45d8-ab55-1044b55f7d6e" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
-	</http:listener-config>
 	<flow name="xcodetoberFlow" doc:id="cef5a905-3f1e-44ea-a4f4-71d4ed65a998" >
 		<http:listener doc:name="Listener" doc:id="8d564278-2b72-4c45-9cbf-822cab9014c1" config-ref="HTTP_Listener_config" path="/test"/>
 		<set-payload value='#["Inside the Experience Layer"]' doc:name="Set Payload" doc:id="c51ccd5e-7d1f-40f9-a6c2-ae4e24cee5f2" />
