@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="4c6d0a3e-8018-4b4a-aa53-56859b738041" config-ref="HTTP_Listener_config" path="/test"/>
 		<set-payload value='#["Inside the Process Layer"]' doc:name="Set Payload" doc:id="58383771-70ea-48e8-a811-b54c2c0665e8" />
 		<logger level="INFO" doc:name="Logger" doc:id="a65925a3-4255-454b-a53d-d2c1cf293969" message="#[payload]"/>
-		<http:request method="GET" doc:name="scodetober" doc:id="ca8798bf-4419-4120-849d-2c39070af947" config-ref="HTTP_Request_configuration" path="${http.path}"/>
+		<http:request method="GET" doc:name="scodetober" doc:id="ca8798bf-4419-4120-849d-2c39070af947" config-ref="HTTP_Request_configuration" path="${http.path}" responseTimeout="${http.request.timeout}"/>
 	</flow>
 </mule>
