@@ -49,4 +49,4 @@ These videos use:
 | 14 | [Best practices in Mule apps: global elements & properties files per env](https://youtu.be/vccXdAiup3o) | - [xcodetober/](/day14/xcodetober/)</br>- [pcodetober/](/day14/pcodetober/)</br>- [scodetober/](/day14/scodetober/)
 | 15 | [Setting up HTTP Requests for Experience, Process, & System layers in Mule 4](https://youtu.be/vjuS_o12FMA) | - [xcodetober/](/day15/xcodetober/)</br>- [pcodetober/](/day15/pcodetober/)</br>- [scodetober/](/day15/scodetober/)
 | 16 | [How to debug several Mule applications in Anypoint Studio at the same time](https://youtu.be/KwlV7BC8lOY) | - [xcodetober/](/day16/xcodetober/)</br>- [pcodetober/](/day16/pcodetober/)</br>- [scodetober/](/day16/scodetober/)
-| 17 | [Deploy Experience, Process, & System API layers to CloudHub 2.0 from Studio]()
+| 17 | [Deploy Experience, Process, & System API layers to CloudHub 2.0 from Studio](https://youtu.be/s9Vd31XAPRM) | - [xcodetober/](/day17/xcodetober/)</br>- [pcodetober/](/day17/pcodetober/)</br>- [scodetober/](/day17/scodetober/)
