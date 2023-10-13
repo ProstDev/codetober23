@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	
+	<flow name="pcodetoberFlow" doc:id="6c55957b-3b8f-44ff-a884-6a179f798e8f" >
+		<http:listener doc:name="Listener" doc:id="4c6d0a3e-8018-4b4a-aa53-56859b738041" config-ref="HTTP_Listener_config" path="/test"/>
+		<set-payload value='#["Inside the Process Layer"]' doc:name="Set Payload" doc:id="58383771-70ea-48e8-a811-b54c2c0665e8" />
+		<logger level="INFO" doc:name="Logger" doc:id="a65925a3-4255-454b-a53d-d2c1cf293969" message="#[payload]"/>
+	</flow>
+</mule>
