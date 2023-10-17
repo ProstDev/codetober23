@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:db="http://www.mulesoft.org/schema/mule/db" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+    http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+    http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+	http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+
+    <db:config name="Mysql_Database_Config">
+        <db:my-sql-connection host="mudb.learn.mulesoft.com" port="3306" user="mule" password="mule" database="training" />
+    </db:config>
+    <flow name="getFlights">
+        <db:select config-ref="Mysql_Database_Config" doc:name="Query Flights" doc:id="qetwfy">
+            <db:sql>
+                <![CDATA[Select * FROM american]]>
+            </db:sql>
+        </db:select>
+        <set-variable value="#[payload]" variableName="databasePayload" doc:name="Set variable Payload" doc:id="vjlurz" />
+        <ee:transform doc:name="Transform Message">
+            <ee:message>
+                <ee:set-payload resource="dw/response.dwl" />
+            </ee:message>
+        </ee:transform>
+        <logger doc:name="Logger" doc:id="gisplu" message="#[%dw 2.0
+        output application/json
+        ---
+        payload]" />
+    </flow>
+
+</mule>

@@ -58,3 +58,4 @@ These videos use:
 | 21 | [Connecting to a Database from the Mule app in Anypoint Code Builder (ACB)](https://youtu.be/PFrBliD2W7I) | - [american-ws-anypoint-code-builder/](/day21/american-ws-anypoint-code-builder/)
 | 22 | [Transforming Flight Data with DataWeave in Anypoint Code Builder (ACB)](https://youtu.be/62w45KzekXM) | - [american-ws-anypoint-code-builder/](/day22/american-ws-anypoint-code-builder/)
 | 23 | [Implementing the American Flights API Spec in Anypoint Code Builder (ACB)](https://youtu.be/UxDPOjUZUCg) | - [american-ws-anypoint-code-builder/](/day23/american-ws-anypoint-code-builder/)
+| 24 | [Debugging the American Flights App in Anypoint Code Builder (ACB)](https://youtu.be/DZGkrtxTyNY) | - [american-ws-anypoint-code-builder/](/day24/american-ws-anypoint-code-builder/)
