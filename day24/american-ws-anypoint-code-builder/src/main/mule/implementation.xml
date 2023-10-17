@@ -5,7 +5,7 @@
 	http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
 
     <db:config name="Mysql_Database_Config">
-        <db:my-sql-connection host="mudb.learn.mulesoft.com" port="3306" user="mule" password="mule" database="training" />
+        <db:my-sql-connection host="mudb.learn.mulesoft.com" port="3306" user="" password="" database="training" />
     </db:config>
     <flow name="getFlights">
         <db:select config-ref="Mysql_Database_Config" doc:name="Query Flights" doc:id="qetwfy">
