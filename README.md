@@ -54,3 +54,4 @@ These videos use:
 | 19 | [Testing, syncing, and publishing an API in Anypoint Code Builder (ACB)](https://youtu.be/mLm34YPn180) | no code 😭
 | 20 | [Integrating American Flights Processes in Anypoint Code Builder (ACB)](https://youtu.be/hAHosASL-cA) | - [american-ws-anypoint-code-builder/](/day20/american-ws-anypoint-code-builder/)
 | 21 | [Connecting to a Database from the Mule app in Anypoint Code Builder (ACB)](https://youtu.be/PFrBliD2W7I) | - [american-ws-anypoint-code-builder/](/day21/american-ws-anypoint-code-builder/)
+| 22 | [Transforming Flight Data with DataWeave in Anypoint Code Builder (ACB)](https://youtu.be/62w45KzekXM) | - [american-ws-anypoint-code-builder/](/day22/american-ws-anypoint-code-builder/)
