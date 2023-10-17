@@ -52,3 +52,4 @@ These videos use:
 | 17 | [Deploy Experience, Process, & System API layers to CloudHub 2.0 from Studio](https://youtu.be/s9Vd31XAPRM) | - [xcodetober/](/day17/xcodetober/)</br>- [pcodetober/](/day17/pcodetober/)</br>- [scodetober/](/day17/scodetober/)
 | 18 | [Designing the American Flights API Spec in Anypoint Code Builder (ACB)](https://youtu.be/Plmry5Usq5U) | - [American Flights API/](/day18/American%20Flights%20API/)
 | 19 | [Testing, syncing, and publishing an API in Anypoint Code Builder (ACB)](https://youtu.be/mLm34YPn180) | no code 😭
+| 20 | [Integrating American Flights Processes in Anypoint Code Builder (ACB)](https://youtu.be/hAHosASL-cA) | - [american-ws-anypoint-code-builder/](/day20/american-ws-anypoint-code-builder/)
