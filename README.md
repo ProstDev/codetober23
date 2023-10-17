@@ -22,7 +22,9 @@ Happy #Codetober!
 
 These videos use:
 
-- Anypoint Extension Pack version 1.0.3 (Pre-Release/BETA)
+- Anypoint Extension Pack 
+  - version 1.0.3 (Pre-Release/BETA)
+  - version 1.0.5 (GA - After day 16)
 - Anypoint Studio version 7.15 
 - DataWeave version 2.5 (after day 5)
 - MacOS Ventura 13.5 with Intel Core i9 processor
