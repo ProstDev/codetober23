@@ -59,3 +59,4 @@ These videos use:
 | 22 | [Transforming Flight Data with DataWeave in Anypoint Code Builder (ACB)](https://youtu.be/62w45KzekXM) | - [american-ws-anypoint-code-builder/](/day22/american-ws-anypoint-code-builder/)
 | 23 | [Implementing the American Flights API Spec in Anypoint Code Builder (ACB)](https://youtu.be/UxDPOjUZUCg) | - [american-ws-anypoint-code-builder/](/day23/american-ws-anypoint-code-builder/)
 | 24 | [Debugging the American Flights App in Anypoint Code Builder (ACB)](https://youtu.be/DZGkrtxTyNY) | - [american-ws-anypoint-code-builder/](/day24/american-ws-anypoint-code-builder/)
+| 25 | [Implement & test a GraphQL API in Anypoint Code Builder (ACB)](https://youtu.be/la0GM2KUbio) | - [books-api.graphql](/day25/books-api.graphql)</br>- [books-implementation/](/day25/books-implementation/)

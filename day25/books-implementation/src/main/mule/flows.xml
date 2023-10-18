@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" xmlns:http="http://www.mulesoft.org/schema/mule/http" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/graphql-router http://www.mulesoft.org/schema/mule/graphql-router/current/mule-graphql-router.xsd">
+  <flow name="api-main-flow">
+    <http:listener xmlns:http="http://www.mulesoft.org/schema/mule/http" config-ref="http-listener-config" path="${http.listener.path}"/>
+    <graphqlrouter:route xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config"/>
+  </flow>
+  <flow name="Query.bookById">
+    <graphqlrouter:data-fetcher xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Query" fieldName="bookById"/>
+    <set-payload value="{&#xa;  &quot;id&quot;: &quot;some-id&quot;,&#xa;  &quot;name&quot;: &quot;Hello World!&quot;,&#xa;  &quot;pageCount&quot;: 100,&#xa;  &quot;author&quot;: {&#xa;    &quot;id&quot;: &quot;#myID&quot;,&#xa;    &quot;firstName&quot;: &quot;This is some example data&quot;,&#xa;    &quot;lastName&quot;: &quot;Hello World!&quot;&#xa;  }&#xa;}" mimeType="application/json"/>
+    <graphqlrouter:serialize xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Query" fieldName="bookById"/>
+  </flow>
+  <flow name="Query.books">
+    <graphqlrouter:data-fetcher xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Query" fieldName="books"/>
+    <set-payload value="[&#xa;  {&#xa;    &quot;id&quot;: &quot;urn:uuid:123e4567-e89b-12d3-a456-426655440000&quot;,&#xa;    &quot;name&quot;: &quot;This is some example data&quot;,&#xa;    &quot;pageCount&quot;: 100,&#xa;    &quot;author&quot;: {&#xa;      &quot;id&quot;: &quot;urn:uuid:123e4567-e89b-12d3-a456-426655440000&quot;,&#xa;      &quot;firstName&quot;: &quot;Hello World!&quot;,&#xa;      &quot;lastName&quot;: &quot;This is some example data&quot;&#xa;    }&#xa;  }&#xa;]" mimeType="application/json"/>
+    <graphqlrouter:serialize xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Query" fieldName="books"/>
+  </flow>
+  <flow name="Query.bestsellers">
+    <graphqlrouter:data-fetcher xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Query" fieldName="bestsellers"/>
+    <set-payload value="{&#xa;  &quot;books&quot;: [&#xa;    {&#xa;      &quot;id&quot;: &quot;#myID&quot;,&#xa;      &quot;name&quot;: &quot;This is some example data&quot;,&#xa;      &quot;pageCount&quot;: -100,&#xa;      &quot;author&quot;: null&#xa;    },&#xa;    {&#xa;      &quot;id&quot;: &quot;some-id&quot;,&#xa;      &quot;name&quot;: &quot;This is some example data&quot;,&#xa;      &quot;pageCount&quot;: 2,&#xa;      &quot;author&quot;: null&#xa;    },&#xa;    {&#xa;      &quot;id&quot;: &quot;some-id&quot;,&#xa;      &quot;name&quot;: &quot;This is some example data&quot;,&#xa;      &quot;pageCount&quot;: 100,&#xa;      &quot;author&quot;: null&#xa;    }&#xa;  ],&#xa;  &quot;authors&quot;: [&#xa;    {&#xa;      &quot;id&quot;: &quot;some-id&quot;,&#xa;      &quot;firstName&quot;: &quot;This is some example data&quot;,&#xa;      &quot;lastName&quot;: &quot;Goodbye&quot;&#xa;    },&#xa;    {&#xa;      &quot;id&quot;: &quot;#myID&quot;,&#xa;      &quot;firstName&quot;: &quot;Goodbye&quot;,&#xa;      &quot;lastName&quot;: &quot;This is some example data&quot;&#xa;    },&#xa;    {&#xa;      &quot;id&quot;: &quot;urn:uuid:123e4567-e89b-12d3-a456-426655440000&quot;,&#xa;      &quot;firstName&quot;: &quot;Hello World!&quot;,&#xa;      &quot;lastName&quot;: &quot;This is some example data&quot;&#xa;    }&#xa;  ]&#xa;}" mimeType="application/json"/>
+    <graphqlrouter:serialize xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Query" fieldName="bestsellers"/>
+  </flow>
+  <flow name="Book.author">
+    <graphqlrouter:data-fetcher xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Book" fieldName="author"/>
+    <set-payload value="{&#xa;  &quot;id&quot;: &quot;urn:uuid:123e4567-e89b-12d3-a456-426655440000&quot;,&#xa;  &quot;firstName&quot;: &quot;Hello World!&quot;,&#xa;  &quot;lastName&quot;: &quot;Hello World!&quot;&#xa;}" mimeType="application/json"/>
+    <graphqlrouter:serialize xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Book" fieldName="author"/>
+  </flow>
+  <flow name="Bestsellers.books">
+    <graphqlrouter:data-fetcher xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Bestsellers" fieldName="books"/>
+    <set-payload value="[&#xa;  {&#xa;    &quot;id&quot;: &quot;some-id&quot;,&#xa;    &quot;name&quot;: &quot;Goodbye&quot;,&#xa;    &quot;pageCount&quot;: -1,&#xa;    &quot;author&quot;: {&#xa;      &quot;id&quot;: &quot;#myID&quot;,&#xa;      &quot;firstName&quot;: &quot;This is some example data&quot;,&#xa;      &quot;lastName&quot;: &quot;This is some example data&quot;&#xa;    }&#xa;  }&#xa;]" mimeType="application/json"/>
+    <graphqlrouter:serialize xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Bestsellers" fieldName="books"/>
+  </flow>
+  <flow name="Bestsellers.authors">
+    <graphqlrouter:data-fetcher xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Bestsellers" fieldName="authors"/>
+    <set-payload value="[&#xa;  &#xa;]" mimeType="application/json"/>
+    <graphqlrouter:serialize xmlns:graphqlrouter="http://www.mulesoft.org/schema/mule/graphql-router" config-ref="api-router-config" objectTypeName="Bestsellers" fieldName="authors"/>
+  </flow>
+</mule>
