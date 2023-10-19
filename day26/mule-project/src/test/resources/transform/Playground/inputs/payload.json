@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "firstName": "Alex",
+    "lastName": "Martinez",
+    "birthDate": "1923-01-01",
+    "email": "alex@email.com",
+    "address": {
+      "street": "1234 MuleSoft St.",
+      "city": "Toronto",
+      "state": "Ontario",
+      "country": "Canada"
+    },
+    "phone": {
+      "number": "1231231233",
+      "countryCode": "+1",
+      "type": "Cellphone"
+    }
+  }
