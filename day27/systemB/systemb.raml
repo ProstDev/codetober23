@@ -1,0 +1,37 @@
+#%RAML 1.0
+title: systemB
+mediaType: application/json
+version: 1.0.0
+
+types:
+  User: !include types/User.raml
+
+/users:
+  get:
+    description: Get list of users
+    responses:
+      200:
+        body: User[]
+  post:
+    description: Create a new user
+    body: User
+    responses:
+      201:
+        body: User
+  
+  /{id}:
+    get:
+      description: Get existing user
+      responses:
+        200:
+          body: User
+    post:
+      description: Update existing user
+      body: User
+      responses:
+        200:
+          body: User
+    delete:
+      description: Delete existing user
+      responses:
+        204:
