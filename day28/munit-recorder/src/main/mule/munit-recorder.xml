@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="71fb28c6-17bf-4646-93b7-1ef4871c03c7" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="munit-recorderFlow" doc:id="a9bc80d3-4969-44a2-9564-9df36fc75ce4" >
+		<http:listener doc:name="Listener" doc:id="92e9c7d6-6b47-4f83-aae3-c275b4835339" config-ref="HTTP_Listener_config" path="/test"/>
+		<choice doc:name="Choice" doc:id="069c2979-5175-4592-b218-1e0dd2c51920" >
+			<when expression="#[payload.test ~= true]">
+				<set-payload value="TRUE" doc:name="TRUE" doc:id="df4c5090-5209-473b-aecc-eb1477187789" />
+			</when>
+			<otherwise >
+				<set-payload value="FALSE" doc:name="FALSE" doc:id="5c088566-9872-4557-adce-c782262fae4c" />
+			</otherwise>
+		</choice>
+		<logger level="INFO" doc:name="Logger" doc:id="5fa764eb-839a-46a7-a151-b6a055e55f02" message="#[payload]"/>
+	</flow>
+</mule>
