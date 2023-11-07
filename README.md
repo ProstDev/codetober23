@@ -66,3 +66,4 @@ These videos use:
 | 28 | [Testing Mule flows with the MUnit recorder in Anypoint Studio](https://youtu.be/F8jeqW93x2E) | - [munit-recorder/](/day28/munit-recorder/)
 | 29 | [Enable Multi-Factor Authentication in MuleSoft with the Salesforce App](https://youtu.be/u13IzP7YiEg) | no code 🌟
 | 30 | [Differences between the DataWeave extension & Anypoint Code Builder](https://youtu.be/7fTitIdCT3s) | no code 🫠
+| 31 | [Export a Mule project as a deployable JAR file in Anypoint Code Builder](https://youtu.be/KOTG9AHS13A) | - [mule-project/](/day31/mule-project/)
