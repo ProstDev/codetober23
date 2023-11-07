@@ -6,7 +6,7 @@
 
 ## What is #Codetober?
 
-Here in [ProstDev](https://www.prostdev.com/) we dedicate ourselves to share knowledge to everyone that needs it. Because of that, every October we create this series of 31 videos ranging from various tech topics. [See full playlist for previous years](https://www.youtube.com/playlist?list=PLb61lESgk6hhKwJpM565UJVS5CxVZ4D1u).
+Here at [ProstDev](https://www.prostdev.com/), we dedicate ourselves to sharing knowledge with everyone who needs it. Because of that, every October we create this series of 31 videos ranging from various tech topics. [See the full playlist for previous years](https://www.youtube.com/playlist?list=PLb61lESgk6hhKwJpM565UJVS5CxVZ4D1u).
 
 That's right...we'll publish ONE VIDEO A DAY!
 
@@ -65,3 +65,4 @@ These videos use:
 | 27 | [Using branches in Design Center & Anypoint Code Builder for API specs](https://youtu.be/imPeV-JJrmc) | - [systemB/](/day27/systemB/)
 | 28 | [Testing Mule flows with the MUnit recorder in Anypoint Studio](https://youtu.be/F8jeqW93x2E) | - [munit-recorder/](/day28/munit-recorder/)
 | 29 | [Enable Multi-Factor Authentication in MuleSoft with the Salesforce App](https://youtu.be/u13IzP7YiEg) | no code 🌟
+| 30 | [Differences between the DataWeave extension & Anypoint Code Builder](https://youtu.be/7fTitIdCT3s) | no code 🫠
